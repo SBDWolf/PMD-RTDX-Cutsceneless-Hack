@@ -1,0 +1,877 @@
+-- <<★LuaBlob
+-- x
+-- x
+-- x
+-- x
+-- x
+-- x
+-- x
+-- <<★ScenePartitionBlob
+{"label":"01","fadeSetting_":"FrontBlackStart"}
+-- <<★ActAssetBlob
+ASSET:ActAsset_Map:t01_all:{"symbolName":"t01_all"}
+ASSET:ActAsset_CameraParam:CAM_00:{"symbolName":"CAM_00","param":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":28.897247314453126,"y":2.690741539001465,"z":0.06417131423950196},"rotateQ":{"x":0.06291063129901886,"y":0.9363863468170166,"z":-0.2621796429157257,"w":0.22468823194503785},"rotateAtPos":{"x":0.0,"y":0.0,"z":-1.0},"rotateAtRollDeg":0.0}}
+ASSET:ActAsset_Chara:HERO:{"symbolName":"HERO","pos":{"posType":0,"pos":{"x":30.679241180419923,"y":0.0,"z":-3.999194622039795},"symbol":""},"rot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":8.742277657347586e-8,"z":0.0,"w":1.0},"lookSymbol":""}}
+ASSET:ActAsset_Chara:PARTNER:{"symbolName":"PARTNER","pos":{"posType":0,"pos":{"x":31.301393508911134,"y":0.0,"z":-2.9868667125701906},"symbol":""},"rot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.3826834559440613,"z":0.0,"w":0.9238795042037964},"lookSymbol":""}}
+ASSET:ActAsset_Chara:PERIPPAA:{"symbolName":"PERIPPAA","pos":{"posType":0,"pos":{"x":14.409875869750977,"y":0.0,"z":6.039850234985352},"symbol":""},"rot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"lookSymbol":""}}
+MISC:{"groundMapId":"","comment":"","isAssetAddLoadAndContinue":false,"isAssetAddOnlyLoad":true,"appendAssetSetSymbols":[]}
+
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"CAM_00","directData":{"fovType":100,"fieldOfView":20.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":0.0,"y":0.0,"z":0.0},"rotateQ":{"x":0.0,"y":1.0,"z":0.0,"w":-4.371138828673793e-8},"rotateAtPos":{"x":0.0,"y":0.0,"z":-1.0},"rotateAtRollDeg":0.0}}}
+--   }
+-- # x
+--   CH:PARTNER:{
+--     0::PlayMotion:{"motion":"ev001_sleep01","isWait":false,"isAddQueue":false,"isLoop":true,"blendTimeSec":0.0,"motionSpeed":1.0,"isTaskEndMark":false}
+--   }
+--   CH:HERO:{
+--     0::SetVisible:{"visible":false}
+--   }
+-- # x
+--   MAP::{
+--     0::MapObjVisible:{"mapObjName":"obj_post_letter ","visible":true}
+--   }
+-- }
+*::{
+  0::PlaySe:{"isWait":false,"symbol":"SE_ENV_BREEZE_LP","fadeInTime":0.5,"volume":1.0,"volumeSymbol":"DEFAULT"}
+  1::ScreenFade:{"moveCameraParam":{"distanceMode":0,"toCamParam":{"refSymbol":"","directData":{"fovType":100,"fieldOfView":60.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":0.0,"y":0.0,"z":0.0},"rotateQ":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}},"isWait":true,"fadeMode":0,"fadeLayer":0,"fadeTime":0.5,"fadeTimeSymbol":"","fadeColorStart":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"fadeColorEnd":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}
+  2::Sleep:{"timeSec":2.0}
+}
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":100,"fieldOfView":20.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":30.64092254638672,"y":3.1850860118865969,"z":5.420483112335205},"rotateQ":{"x":0.00020364961528684944,"y":0.9907380938529968,"z":-0.13577833771705628,"w":0.0014859576476737857},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+--   CH:HERO:{
+--     0::SetVisible:{"visible":true}
+--     1::MoveTo:{"isWait":true,"speed":1.5,"speedSymbol":"","yawTurnOff":false,"yawTurnWait":false,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":100,"toPos":{"posType":0,"pos":{"x":30.700000762939454,"y":0.0,"z":-6.161932945251465},"symbol":""},"splinePosLst":[]}
+--     2::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_NOTICE_LOW_01","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--     3::PlayManpu:{"isWait":true,"symbol":"MP_EXCLAMATION"}
+--     4::Sleep:{"timeSec":0.699999988079071}
+--   }
+-- }
+
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     @0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":0,"fieldOfView":23.0,"near":1.0,"far":1000.0,"rotateType":100,"pos":{"x":26.238367080688478,"y":2.724929094314575,"z":-8.596851348876954},"rotateQ":{"x":0.1741827130317688,"y":0.3817594647407532,"z":-0.07349883019924164,"w":0.9047198295593262},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--     1::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":0,"fieldOfView":30.0,"near":1.0,"far":1000.0,"rotateType":100,"pos":{"x":28.077951431274415,"y":1.3390913009643555,"z":-0.7672023773193359},"rotateQ":{"x":0.036925192922353747,"y":0.9394499063491821,"z":-0.10727766156196594,"w":0.32336029410362246},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+--   CH:HERO:{
+--     0::Sleep:{"timeSec":0.5}
+--     1::MoveTo:{"isWait":true,"speed":0.800000011920929,"speedSymbol":"","yawTurnOff":false,"yawTurnWait":false,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":100,"toPos":{"posType":0,"pos":{"x":30.700000762939454,"y":0.0,"z":-4.415814399719238},"symbol":""},"splinePosLst":[]}
+--   }
+-- }
+-- Parallel:{
+--   *::{
+--     0::StopSe:{"symbol":"SE_ENV_BREEZE_LP","fadeInTime":0.5}
+--   }
+--   CAMERA::{
+--     0::ShakeCam:{"isWait":true,"isReset":false,"xOffs":0.009999999776482582,"yOffs":0.009999999776482582,"intervalSec":0.009999999776482582,"ShakeType":"GaussianRangeRandom","AnimClipName":""}
+--     1::Sleep:{"timeSec":0.30000001192092898}
+--     2::ShakeCam:{"isWait":true,"isReset":true,"xOffs":0.009999999776482582,"yOffs":0.009999999776482582,"intervalSec":0.009999999776482582,"ShakeType":"GaussianRangeRandom","AnimClipName":""}
+--   }
+-- # x
+--   CH:PARTNER:{
+--     0::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_SHOCK_02","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--     1::PlayManpu:{"isWait":false,"symbol":"MP_SHOCK_L"}
+--     2::SetFace:{"faceType":15,"eyeType":8,"mouthType":8}
+--     3::FuncRef:{"refFuncName":"JumpSurprise"}
+--   }
+--   CH:HERO:{
+--     0::PlayMotion:{"motion":"ev000_surprise","isWait":false,"isAddQueue":false,"isLoop":false,"blendTimeSec":0.15000000596046449,"motionSpeed":1.2000000476837159,"isTaskEndMark":false}
+--     @1::MoveTo:{"isWait":true,"speed":2.0,"speedSymbol":"","yawTurnOff":true,"yawTurnWait":false,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":0,"toPos":{"posType":0,"pos":{"x":30.700000762939454,"y":0.0,"z":-5.093292236328125},"symbol":""},"splinePosLst":[]}
+--     2::MoveTo:{"isWait":true,"speed":4.0,"speedSymbol":"","yawTurnOff":true,"yawTurnWait":false,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":0,"toPos":{"posType":0,"pos":{"x":30.700000762939454,"y":0.0,"z":-5.489356994628906},"symbol":""},"splinePosLst":[]}
+--     3::Wait:{"waitMove":false,"waitRotation":false,"waitMotion":true,"waitNeck":false,"waitManpu":false,"isTaskEndMark":false}
+--     4::PlayManpu:{"isWait":false,"symbol":"MP_FLY_SWEAT"}
+--     5::PlayMotion:{"motion":"wait02","isWait":false,"isAddQueue":false,"isLoop":true,"blendTimeSec":0.20000000298023225,"motionSpeed":1.0,"isTaskEndMark":false}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.SURPRISE)
+-- LuaWINDOW.Talk(LuaSymAct("PARTNER"),TextID("B01P01A_M01E02A_2_01_0010","★NONE★",[[ -- Hunh?! Oh no!
+--   ……はっ！　しまった！]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- Parallel:{
+-- # x
+--   CH:PARTNER:{
+--     0::DirTo:{"isWait":true,"rotType":0,"speedDeg":500.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.3420202136039734,"z":0.0,"w":-0.9396926164627075},"lookSymbol":""}}
+--     1::Sleep:{"timeSec":0.5}
+--     2::DirTo:{"isWait":true,"rotType":0,"speedDeg":500.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.4226183593273163,"z":0.0,"w":0.9063077569007874},"lookSymbol":""}}
+--     3::Sleep:{"timeSec":0.5}
+--   }
+--   *::{
+--     0::PlayBgm:{"symbol":"BGM_CAMP_HOME01","fadeInTime":0.0,"isLoop":true,"channel":0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   }
+-- }
+-- CH:PARTNER:{
+--   0::DirTo:{"isWait":true,"rotType":0,"speedDeg":500.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":1.0,"z":0.0,"w":-4.371138828673793e-8},"lookSymbol":""}}
+--   1::Sleep:{"timeSec":0.5}
+--   2::SetFace:{"faceType":4,"eyeType":8,"mouthType":8}
+--   3::PlayManpu:{"isWait":false,"symbol":"MP_LAUGH_LP"}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.HAPPY)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0020","★NONE★",[[ -- Hahaha, sorry![C]I was so excited, I've been waiting out[R]here since dawn.
+--       ハハハ。ごめん。[K]オイラ　もうワクワクして
+--       {明|あ}け{方|がた}から　ここで{待|ま}ってたんだけど……]]),
+--     TextID("B01P01A_M01E02A_2_01_0030","★NONE★",[[ -- I guess I just fell asleep!
+--       そしたら　つい　ねちゃったよ。]]),
+--   },
+--   -- -----------------------------------------
+--   TYPE3={
+--     TextID("B01P01A_M01E02A_2_01_0040","★NONE★",[[ -- Ahaha, sorry![C]I was so excited about today, I've been[R]waiting here since dawn.
+--       ハハハ。ごめん。[K]ワタシ　もうワクワクして
+--       {明|あ}け{方|がた}から　ここで{待|ま}ってたんだけど……]]),
+--     TextID("B01P01A_M01E02A_2_01_0050","★NONE★",[[ -- I must have fallen asleep.
+--       そしたら　つい　ねちゃった。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0060","★NONE★",[[ -- Hahaha, sorry![C]I was so excited, I came out here at[R]dawn to wait for you.
+--       ハハハ。ごめん。[K]ボク　もうワクワクして
+--       {明|あ}け{方|がた}から　ここで{待|ま}ってたんだけど……]]),
+--     TextID("B01P01A_M01E02A_2_01_0070","★NONE★",[[ -- I must have snoozed off.
+--       そしたら　つい　ねちゃったよ。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- CH:PARTNER:{
+--   0::SetFace:{"faceType":0,"eyeType":8,"mouthType":8}
+--   1::ResetManpu:{}
+-- }
+-- CH:HERO:{
+--   0::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_HURRY","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   1::PlayManpu:{"isWait":true,"symbol":"MP_FLY_SWEAT"}
+--   2::Sleep:{"timeSec":0.5}
+-- }
+
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CH:PARTNER:{
+--     0::FuncRef:{"refFuncName":"Jump2"}
+--     1::SetFace:{"faceType":4,"eyeType":8,"mouthType":8}
+--   }
+--   CAMERA::{
+--     @0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":100,"fieldOfView":20.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":30.64092254638672,"y":3.1850860118865969,"z":5.420483112335205},"rotateQ":{"x":0.00020364961528684944,"y":0.9907380938529968,"z":-0.13577833771705628,"w":0.0014859576476737857},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--     1::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":30.645383834838868,"y":3.470918655395508,"z":3.932617664337158},"rotateQ":{"x":0.00026143246213905513,"y":0.9846907258033752,"z":-0.1743040829896927,"w":0.0014768876135349274},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.HAPPY)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0080","★NONE★",[[ -- Anyway...[C]our rescue team officially begins![R]Let's do this right!
+--       とにかく。[K]{今日|きょう}から{救助隊|きゅうじょたい}{開始|かいし}だ！
+--       がんばろうな！]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0090","★NONE★",[[ -- Anyway...[C]today marks the start of our rescue team![R]Let's always do our best!
+--       とにかく。[K]{今日|きょう}から{救助隊|きゅうじょたい}{開始|かいし}だ！
+--       がんばろうね！]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":23.21762466430664,"y":2.579422950744629,"z":-3.7887957096099855},"rotateQ":{"x":0.10048690438270569,"y":0.7246785163879395,"z":-0.10819029808044434,"w":0.67308109998703},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--     1::MoveCam:{"isWait":false,"moveCameraParam":{"distanceMode":0,"toCamParam":{"refSymbol":"","directData":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":23.184722900390626,"y":2.5890231132507326,"z":-4.006929397583008},"rotateQ":{"x":0.10048692673444748,"y":0.7246786952018738,"z":-0.10819023847579956,"w":0.67308109998703},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}},"speed":0.10000000149011612,"accelParam":{"startType":999,"endType":100,"startRatio":0.0,"endRatio":0.5}}
+--   }
+--   *::{
+--     0::Sleep:{"timeSec":1.5}
+--   }
+-- }
+-- CH:PARTNER:{
+--   0::SetFace:{"faceType":0,"eyeType":8,"mouthType":8}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0100","★NONE★",[[ -- ...
+--       ……。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0110","★NONE★",[[ -- ...
+--       ……。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.KeyWait()
+
+-- -- <<★ActCommandBlob
+-- CH:PARTNER:{
+--   0::SetFace:{"faceType":7,"eyeType":8,"mouthType":8}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.THINK)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0120","★NONE★",[[ -- ... ... ...
+--       …………。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0130","★NONE★",[[ -- ... ... ...
+--       …………。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+
+-- -- <<★ActCommandBlob
+-- CH:PARTNER:{
+--   0::Sleep:{"timeSec":0.5}
+--   1::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_HURRY","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   2::PlayManpu:{"isWait":true,"symbol":"MP_FLY_SWEAT"}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.SAD)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0140","★NONE★",[[ -- So, uh...[C]we don't have any job offers yet.[R]Hahahaha...
+--       ……と{言|い}っても　まだ{仕事|しごと}ないんだよな。
+--       ハハハハ……。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0150","★NONE★",[[ -- But, um...[C]we don't have any job offers yet.[R]Hahahaha...
+--       ……と{言|い}っても　まだ{仕事|しごと}ないんだよね。
+--       ハハハハ……。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:HERO:{
+--   0::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_SWEAT","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   1::PlayManpu:{"isWait":true,"symbol":"MP_SWEAT_L"}
+--   2::Sleep:{"timeSec":1.0}
+-- }
+
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":25.523962020874025,"y":2.135906457901001,"z":1.2877459526062012},"rotateQ":{"x":0.04481356963515282,"y":0.9011313915252686,"z":-0.0960610881447792,"w":0.42038822174072268},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+-- # x
+--   CH:PARTNER:{
+--     0::SetFace:{"faceType":0,"eyeType":8,"mouthType":8}
+--     1::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_NOTICE_LOW_01","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--     2::PlayManpu:{"isWait":true,"symbol":"MP_EXCLAMATION"}
+--     3::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.7071067690849304,"z":0.0,"w":0.7071067690849304},"lookSymbol":""}}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.RIGHT_X, FACE_POS.RIGHT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
+-- LuaWINDOW.Talk(LuaSymAct("PARTNER"),TextID("B01P01A_M01E02A_2_01_0160","★NONE★",[[ -- Oh yeah![K][R]Maybe there's something in the mailbox...
+--   そうだ！[K]
+--   もしかしたらポストの{中|なか}に……]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- Parallel:{
+-- # x
+--   CH:PARTNER:{
+--     0::MoveTo:{"isWait":true,"speed":1.5,"speedSymbol":"","yawTurnOff":false,"yawTurnWait":true,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":100,"toPos":{"posType":0,"pos":{"x":31.91777801513672,"y":0.0,"z":-3.1334033012390138},"symbol":""},"splinePosLst":[]}
+--     1::DirTo:{"isWait":true,"rotType":0,"speedDeg":350.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":1.0,"z":0.0,"w":-4.371138828673793e-8},"lookSymbol":""}}
+--     2::FuncRef:{"refFuncName":"Jump2"}
+--   }
+--   CH:HERO:{
+--     0::Sleep:{"timeSec":0.30000001192092898}
+--     1::MoveTo:{"isWait":true,"speed":1.5,"speedSymbol":"","yawTurnOff":false,"yawTurnWait":false,"yawTurnSpeedDeg":300.0,"yawTurnRotType":0,"motionType":100,"toPos":{"posType":0,"pos":{"x":30.679241180419923,"y":0.0,"z":-3.999194622039795},"symbol":""},"splinePosLst":[]}
+--     2::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.5,"z":0.0,"w":0.8660253882408142},"lookSymbol":""}}
+--   }
+-- }
+
+-- -- <<★ActCommandBlob
+-- # x
+-- MAP::{
+--   0::MapObjVisible:{"mapObjName":"obj_post_letter ","visible":false}
+--   1::PlaySe:{"isWait":false,"symbol":"SE_EVT_PG_LETTER","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0170","★NONE★",[[ -- [partner] checked the mailbox.
+--   [partner]は　ポストを{調|しら}べた]]) )
+-- LuaWINDOW.CloseMessage()
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0180","★NONE★",[[ -- The mailbox contained[R]a [CS:6]Rescue Team Starter Set[CR]!
+--   ポストには
+--   [CS:B]{救助隊|きゅうじょたい}スターターセット[CR]が{入|はい}っていた！]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_NOTICE_LOW_01","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   1::PlayManpu:{"isWait":true,"symbol":"MP_EXCLAMATION"}
+--   2::FuncRef:{"refFuncName":"Jump2"}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.EMOTION)
+-- LuaWINDOW.Talk(LuaSymAct("PARTNER"),TextID("B01P01A_M01E02A_2_01_0190","★NONE★",[[ -- I knew it'd be there![K][R]It's the [CS:6]Rescue Team Starter Set[CR]!
+--   やっぱりあった！[K]
+--   [CS:B]{救助隊|きゅうじょたい}スターターセット[CR]！]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":300,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.8868303894996643,"z":0.0,"w":-0.46209508180618288},"lookSymbol":"HERO"}}
+--   1::PlayManpu:{"isWait":false,"symbol":"MP_SPREE_LP"}
+--   2::SetFace:{"faceType":4,"eyeType":8,"mouthType":8}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.HAPPY)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0200","★NONE★",[[ -- You always get one when[R]you start a rescue team.
+--       {救助隊|きゅうじょたい}を{作|つく}ったら
+--       かならず　もらえるんだ。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0210","★NONE★",[[ -- They always give you one[R]if you start a rescue team.
+--       {救助隊|きゅうじょたい}を{作|つく}ったら
+--       かならず　もらえるんだよ。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::ResetManpu:{}
+--   1::SetFace:{"faceType":0,"eyeType":8,"mouthType":8}
+--   2::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":1.0,"z":0.0,"w":-4.371138828673793e-8},"lookSymbol":"HERO"}}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0220","★NONE★",[[ -- [partner] opened[R]the [CS:6]Rescue Team Starter Set[CR].
+--   [partner]は
+--   [CS:B]{救助隊|きゅうじょたい}スターターセット[CR]を{開|あ}けてみた]]) )
+-- LuaWINDOW.CloseMessage()
+
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::PlayMe:{"isWait":false,"symbol":"ME_REWARD","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0230","★NONE★",[[ -- There was[R]a [CS:6]Rescue Team Badge[CR] inside!
+--   {中|なか}には　[CS:B]{救助隊|きゅうじょたい}バッジ[CR]が{入|はい}っていた！]]) )
+
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::WaitMe:{}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::PlayMe:{"isWait":false,"symbol":"ME_REWARD","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0240","★NONE★",[[ -- There was a [CS:6]Toolbox[CR] inside, too!
+--   [CS:B]{道具箱|どうぐばこ}[CR]が{入|はい}っていた！]]) )
+
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::WaitMe:{}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::PlayMe:{"isWait":false,"symbol":"ME_REWARD","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0250","★NONE★",[[ -- There was also an issue of[R][CS:6]Pokémon News[CR] inside!
+--   [CS:B]ポケモンニュース[CR]が{入|はい}っていた！]]) )
+-- -- <<★ActCommandBlob
+-- *::{
+--   0::WaitMe:{}
+-- }
+
+-- -- <<★LuaBlob
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::PlayManpu:{"isWait":false,"symbol":"MP_LAUGH_LP"}
+--   1::FuncRef:{"refFuncName":"Jump2"}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.EMOTION)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0260","★NONE★",[[ -- Yeah![K][R]There's all sorts of good stuff in it!
+--       やったー！[K]　いろいろ{入|はい}ってる！]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0270","★NONE★",[[ -- Yes![K][R]There are some good things here!
+--       やったー！[K]　いろいろ{入|はい}ってる！]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::ResetManpu:{}
+--   1::DirTo:{"isWait":true,"rotType":0,"speedDeg":250.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":300,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.8868303894996643,"z":0.0,"w":-0.46209508180618288},"lookSymbol":"HERO"}}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0280","★NONE★",[[ -- This [CS:6]Rescue Team Badge[CR]...[K][R]It's proof that you're in a rescue team.
+--       まず　[CS:B]{救助隊|きゅうじょたい}バッジ[CR]。[K]
+--       {救助隊|きゅうじょたい}の{証|あかし}なんだ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0290","★NONE★",[[ -- This [CS:6]Toolbox[CR], too...[C]You can use it to keep items that you[R]find in dungeons.
+--       そして　[CS:B]{道具箱|どうぐばこ}[CR]。[K]
+--       ダンジョンで{拾|ひろ}った{道具|どうぐ}を{取|と}っておけるんだ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0300","★TAG★",[[ -- I'll put the stuff that [kind_p:BATAFURII] gave us in[R]here. Might as well put it to good use.
+--       とりあえず[act_name:BATAFURII]から　もらった{道具|どうぐ}も
+--       ここに{入|い}れておくよ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0310","★NONE★",[[ -- Items are really useful.[R]Let's use them on our adventures.
+--       とても{便利|べんり}だから
+--       {冒険|ぼうけん}に{行|い}ったら{使|つか}おうな。]]),
+--     TextID("B01P01A_M01E02A_2_01_0320","★NONE★",[[ -- And we have here a copy of[R]the [CS:6]Pokémon News[CR].[C]It has useful information for rescuers.
+--       {最後|さいご}に　[CS:B]ポケモンニュース[CR]。[K]
+--       {救助|きゅうじょ}に{役立|やくだ}つ{情報|じょうほう}が{書|か}いてあるんだ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0330","★NONE★",[[ -- I'll leave the [CS:6]Pokémon News[CR] in the mailbox.[R]You should read it later.
+--       [CS:B]ポケモンニュース[CR]は　ポストのところに
+--       {入|い}れておくから　あとで{読|よ}んでみるといいよ。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0340","★NONE★",[[ -- First off, the [CS:6]Rescue Team Badge[CR].[K][R]It shows that we're a rescue team.
+--       まず　[CS:B]{救助隊|きゅうじょたい}バッジ[CR]。[K]
+--       {救助隊|きゅうじょたい}の{証|あかし}だよ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0350","★NONE★",[[ -- This is a [CS:6]Toolbox[CR].[K][R]Use it to carry items you find in dungeons.
+--       そして　[CS:B]{道具箱|どうぐばこ}[CR]。[K]
+--       ダンジョンで{拾|ひろ}った{道具|どうぐ}を{取|と}っておけるんだよ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0360","★TAG★",[[ -- Let's put the stuff [kind_p:BATAFURII][R]gave us in here for now.
+--       とりあえず[act_name:BATAFURII]から　もらった{道具|どうぐ}も
+--       ここに{入|い}れておくよ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0370","★NONE★",[[ -- Items are very useful,[R]so let's use them on our adventures.
+--       とても{便利|べんり}だから
+--       {冒険|ぼうけん}に{行|い}ったら{使|つか}おうね。]]),
+--     TextID("B01P01A_M01E02A_2_01_0380","★NONE★",[[ -- And finally, a copy of the [CS:6]Pokémon News[CR].[K][R]It's useful for rescue teams.
+--       {最後|さいご}に　[CS:B]ポケモンニュース[CR]。[K]
+--       {救助|きゅうじょ}に{役立|やくだ}つ{情報|じょうほう}が{書|か}いてあるんだよ。]]),
+--     TextID("B01P01A_M01E02A_2_01_0390","★NONE★",[[ -- I'll put the [CS:6]Pokémon News[CR] in the mailbox.[R]You should read it later on.
+--       [CS:B]ポケモンニュース[CR]は　ポストのところに
+--       {入|い}れておくから　あとで{読|よ}んでみるといいよ。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":1.0,"z":0.0,"w":-4.371138828673793e-8},"lookSymbol":"HERO"}}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL) -- auto_add
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0400","★NONE★",[[ -- And...let's see...[C]Is there any other mail?[K][R]Did we miss anything?
+--       あと……[K]ほかにも{手紙|てがみ}とかは……[K]
+--       ないのかな……]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0410","★NONE★",[[ -- Anything else?[C]Is there any other mail?[K][R]Maybe not?
+--       あと……[K]ほかにも{手紙|てがみ}とかは……[K]
+--       ないのかなあ……]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- subEveCloseMsg()
+-- -- <<★ActCommandBlob
+-- Parallel:{
+-- # x
+--   CH:PARTNER:{
+--     0::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":30.0,"rollDeg":0.0,"timeSec":0.25,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+--   }
+--   CH:PARTNER@HITOKAGE:{
+--   }
+--   CH:PARTNER@ZENIGAME:{
+--   }
+--   CH:PARTNER@PIKACHUU:{
+--   }
+--   CH:PARTNER@KIMORI:{
+--   }
+--   CH:PARTNER@KODAKKU:{
+--   }
+--   CH:PARTNER@WANRIKII:{
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0420","★NONE★",[[ -- [partner] checked the mailbox.
+--   [partner]は　ポストを{調|しら}べた]]) )
+-- LuaWINDOW.SysMsg(TextID("B01P01A_M01E02A_2_01_0430","★NONE★",[[ -- But the mailbox was empty.
+--   しかしポストは　カラッポだった]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":-20.0,"rollDeg":0.0,"timeSec":0.25,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+--   1::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_HURRY","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--   2::PlayManpu:{"isWait":true,"symbol":"MP_FLY_SWEAT"}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.SAD)
+-- LuaWINDOW.Talk(LuaSymAct("PARTNER"),TextID("B01P01A_M01E02A_2_01_0440","★NONE★",[[ -- OK, so there isn't any[R]mail for us after all.
+--   やっぱり{手紙|てがみ}は　{入|はい}ってないか……。]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":105,"fieldOfView":23.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":30.784971237182618,"y":3.486743450164795,"z":4.7623724937438969},"rotateQ":{"x":-0.0007524401298724115,"y":0.9859110116958618,"z":-0.16720981895923615,"w":-0.004436585586518049},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+-- # x
+--   CH:PARTNER:{
+--     0::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":0.0,"rollDeg":0.0,"timeSec":0.15000000596046449,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+--     1::MoveTo:{"isWait":true,"speed":1.5,"speedSymbol":"","yawTurnOff":false,"yawTurnWait":true,"yawTurnSpeedDeg":400.0,"yawTurnRotType":0,"motionType":100,"toPos":{"posType":0,"pos":{"x":31.301393508911134,"y":0.0,"z":-2.9868667125701906},"symbol":""},"splinePosLst":[]}
+--     2::DirTo:{"isWait":true,"rotType":0,"speedDeg":500.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":300,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.9622800350189209,"z":0.0,"w":-0.27206093072891238},"lookSymbol":"HERO"}}
+--   }
+--   CH:HERO:{
+--     0::Sleep:{"timeSec":0.800000011920929}
+--     1::DirTo:{"isWait":true,"rotType":0,"speedDeg":100.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.258819043636322,"z":0.0,"w":0.9659258127212524},"lookSymbol":"PARTNER"}}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
+-- LuaWINDOW.Talk(LuaSymAct("PARTNER"),TextID("B01P01A_M01E02A_2_01_0450","★NONE★",[[ -- If there were any rescue jobs,[R]we would be getting mail, but...
+--   {救助|きゅうじょ}の{依頼|いらい}があれば　ポストに{手紙|てがみ}が
+--   {来|く}るはずなんだけど……]]) )
+-- subEveCloseMsg()
+-- -- <<★ActCommandBlob
+-- CH:PARTNER:{
+--   0::SetFace:{"faceType":4,"eyeType":8,"mouthType":8}
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.HAPPY)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0460","★NONE★",[[ -- I guess no one knows us because we just[R]started this team. Hahaha...
+--       チームを{作|つく}ったばかりだから　まだ
+--       だれも{知|し}らないんだよな！　ハハハ……。]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0470","★NONE★",[[ -- nobody knows about us since we're[R]such a new team, I guess. Hahaha...
+--       チームを{作|つく}ったばかりだから　まだ
+--       だれも{知|し}らないんだよね！　ハハハ……。]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- # x
+-- CH:PARTNER:{
+--   0::PlayManpu:{"isWait":false,"symbol":"MP_LAUGH_LP"}
+--   1::Sleep:{"timeSec":1.5}
+-- }
+-- Parallel:{
+--   *::[TASK]{
+--     0::StopBgm:{"isWait":false,"fadeTime":1.0,"channel":0}
+--     1::PlaySe:{"isWait":false,"symbol":"SE_EVT_PERIPPAA_FLY_03_LP","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--     2::Sleep:{"timeSec":1.5}
+--     3::StopSe:{"symbol":"SE_EVT_PERIPPAA_FLY_03_LP","fadeInTime":0.5}
+--   }
+-- # x
+--   CH:PARTNER:[TASK]{
+--     0::Sleep:{"timeSec":0.30000001192092898}
+--     1::ResetManpu:{}
+--     2::SetFace:{"faceType":0,"eyeType":8,"mouthType":8}
+--     3::PlayManpu:{"isWait":true,"symbol":"MP_EXCLAMATION"}
+--   }
+--   CH:HERO:[TASK]{
+--     0::Sleep:{"timeSec":0.4000000059604645}
+--     1::PlayManpu:{"isWait":true,"symbol":"MP_NOTICE_L"}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.SysMsg(TextID("B01P01A_SEND_MAIL_01_0010","★NONE★",[[ -- *flap flap*
+--   バサッ！　バサッ！]]) )
+-- LuaWINDOW.CloseMessage()
+-- -- <<★ActCommandBlob
+-- Parallel:{
+--   CAMERA::{
+--     0::SetCam:{"cameraParam":{"refSymbol":"","directData":{"fovType":100,"fieldOfView":20.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":24.91448402404785,"y":2.0024173259735109,"z":-6.831799030303955},"rotateQ":{"x":0.1052141934633255,"y":0.5105037689208984,"z":-0.0631108283996582,"w":0.8510774374008179},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}}
+--   }
+-- # x
+--   CH:PARTNER:{
+--     0::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.9396926164627075,"z":0.0,"w":-0.3420201241970062},"lookSymbol":""}}
+--     1::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":20.0,"rollDeg":0.0,"timeSec":0.20000000298023225,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+--     2::PlaySe:{"isWait":false,"symbol":"SE_EVT_SIGN_QUESTION_01","fadeInTime":0.0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+--     3::PlayManpu:{"isWait":true,"symbol":"MP_QUESTION"}
+--   }
+--   CH:HERO:{
+--     0::DirTo:{"isWait":true,"rotType":0,"speedDeg":300.0,"speedDegSymbol":"","withWalkMotion":true,"targetRot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.9396926164627075,"z":0.0,"w":-0.3420201241970062},"lookSymbol":""}}
+--     1::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":20.0,"rollDeg":0.0,"timeSec":0.20000000298023225,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+--   }
+-- }
+
+-- -- <<★LuaBlob
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- -- x
+-- LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
+-- -- x
+-- LuaWINDOW.SwitchTalk({
+--   TYPE1={
+--     TextID("B01P01A_M01E02A_2_01_0490","★NONE★",[[ -- Huh? What's up?
+--       ン？　なんだ？]]),
+--   },
+--   -- -----------------------------------------
+--   DEFAULT={
+--     TextID("B01P01A_M01E02A_2_01_0500","★NONE★",[[ -- Oh?[R]I wonder what it could be.
+--       おや？　なんだろう？]]),
+--   },
+--   -- -----------------------------------------
+-- })
+-- -- x
+-- LuaWINDOW.CloseMessage()
+-- <<★LuaBlob
+-- x
+-- <<★CutsceneBlob
+{"bContinueMode":true,"bAssetLoadAfter1SyncWait":false,"bWaitTaskPreStart":true,"cutsceneSymbol":"cut_generic_haitatsu"}
+-- <<★ScenePartitionBlob
+{"label":"02","fadeSetting_":"Clear","partitionType_":"Normal"}
+-- <<★LuaBlob
+-- x
+-- <<★ActAssetBlob
+ASSET:ActAsset_Map:t01_all:{"symbolName":"t01_all"}
+ASSET:ActAsset_Chara:HERO:{"symbolName":"HERO","pos":{"posType":0,"pos":{"x":30.679241180419923,"y":0.0,"z":-3.999194622039795},"symbol":""},"rot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.9396926164627075,"z":0.0,"w":-0.3420201241970062},"lookSymbol":""}}
+ASSET:ActAsset_Chara:PARTNER:{"symbolName":"PARTNER","pos":{"posType":0,"pos":{"x":30.696104049682618,"y":0.0,"z":-3.0758249759674074},"symbol":""},"rot":{"rotType":0,"onlyYaw":true,"rotQ":{"x":0.0,"y":0.9396926164627075,"z":0.0,"w":-0.3420201241970062},"lookSymbol":""}}
+ASSET:ActAsset_CameraParam:CAM_00:{"symbolName":"CAM_00","param":{"fovType":0,"fieldOfView":20.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":24.91448402404785,"y":2.0024173259735109,"z":-6.831799030303955},"rotateQ":{"x":0.1052141934633255,"y":0.5105037689208984,"z":-0.0631108283996582,"w":0.8510774374008179},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}
+MISC:{"groundMapId":"","comment":"これは必要なAssetBlob","isAssetAddLoadAndContinue":true,"isAssetAddOnlyLoad":false,"appendAssetSetSymbols":[]}
+
+-- <<★ActCommandBlob
+Parallel:{
+# x
+  CAMERA::{
+    0::SetCamHero:{"isSetPosition":true,"isSetRotate":true}
+  }
+# x
+  *::{
+    0::StopSe:{"symbol":"SE_EVT_PERIPPAA_FLY_03_LP","fadeInTime":1.5}
+    1::PlayBgm:{"symbol":"BGM_CAMP_HOME01","fadeInTime":0.0,"isLoop":true,"channel":0,"volume":1.0,"volumeSymbol":"DEFAULT"}
+  }
+  MAP::{
+    0::MapObjVisible:{"mapObjName":"obj_post_letter ","visible":true}
+  }
+  CH:PERIPPAA:{
+    0::SetVisible:{"visible":false}
+  }
+  CH:HERO:{
+    0::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":30.0,"rollDeg":0.0,"timeSec":0.0,"accelParam":{"startType":999,"endType":999,"startRatio":0.0,"endRatio":0.0}}
+    1::Sleep:{"timeSec":0.20000000298023225}
+    2::MoveNeck:{"isWait":true,"isReset":true,"yawDeg":0.0,"pitchDeg":0.0,"rollDeg":0.0,"timeSec":0.30000001192092898,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+  }
+  CH:PARTNER:{
+    0::MoveNeck:{"isWait":true,"isReset":false,"yawDeg":0.0,"pitchDeg":30.0,"rollDeg":0.0,"timeSec":0.0,"accelParam":{"startType":999,"endType":999,"startRatio":0.0,"endRatio":0.0}}
+    1::Sleep:{"timeSec":0.30000001192092898}
+    2::MoveNeck:{"isWait":true,"isReset":true,"yawDeg":0.0,"pitchDeg":0.0,"rollDeg":0.0,"timeSec":0.30000001192092898,"accelParam":{"startType":999,"endType":200,"startRatio":0.0,"endRatio":0.25}}
+  }
+}
+
+-- <<★LuaBlob
+-- x
