@@ -128,66 +128,13 @@ LuaWINDOW.CloseMessage()
 
 -- <<★BranchLabelBlob
 {"label":"SELECT_A"}
--- <<★ActCommandBlob
-*::{
-  0::Sleep:{"timeSec":0.20000000298023225}
-}
 
--- <<★LuaBlob
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
--- x
-LuaWINDOW.DrawFace(FACE_POS.LEFT_X, FACE_POS.LEFT_Y, LuaSymAct("PARTNER"), FACE_TYPE.NORMAL)
--- x
-LuaWINDOW.SwitchTalk({
-  TYPE1={
-    TextID("T01P01_M01E10A_1N_01_0110","★NONE★",[[ -- Great! Looks like you're all set to roll!
-      うん！
-      {準備|じゅんび}が　できたみたいだね！]]),
-    TextID("T01P01_M01E10A_1N_01_0120","★NONE★",[[ -- We leave tomorrow.
-      {出発|しゅっぱつ}は　{明日|あした}だ。]]),
-    TextID("T01P01_M01E10A_1N_01_0130","★NONE★",[[ -- Let's get plenty of rest tonight and get set[R]for tomorrow.
-      {今日|きょう}は　ゆっくり{休|やす}んで
-      {明日|あした}に　そなえようぜ。]]),
-    TextID("T01P01_M01E10A_1N_01_0140","★NONE★",[[ -- Tomorrow![C]Let's give it everything[R]we've got, [hero]!
-      {明日|あした}！[K]　がんばろうな！
-      [hero]！]]),
-  },
-  -- -----------------------------------------
-  DEFAULT={
-    TextID("T01P01_M01E10A_1N_01_0150","★NONE★",[[ -- Yup! Looks like we're ready to go!
-      うん！
-      {準備|じゅんび}が　できたみたいだね！]]),
-    TextID("T01P01_M01E10A_1N_01_0160","★NONE★",[[ -- We leave tomorrow.
-      {出発|しゅっぱつ}は　{明日|あした}。]]),
-    TextID("T01P01_M01E10A_1N_01_0170","★NONE★",[[ -- So let's get plenty of rest for tomorrow.
-      それにそなえて　{今日|きょう}は
-      ゆっくり{休|やす}もうね。]]),
-    TextID("T01P01_M01E10A_1N_01_0180","★NONE★",[[ -- Tomorrow![C]Let's give it everything[R]we can, [hero]!
-      {明日|あした}！[K]　がんばろうね！
-      [hero]！]]),
-  },
-  -- -----------------------------------------
-})
--- x
-LuaWINDOW.CloseMessage()
 -- <<★ActCommandBlob
 # x
 *::{
   0::StopBgm:{"isWait":false,"fadeTime":1.5,"channel":0}
   1::ScreenFade:{"moveCameraParam":{"distanceMode":0,"toCamParam":{"refSymbol":"","directData":{"fovType":100,"fieldOfView":60.0,"near":0.10000000149011612,"far":1000.0,"rotateType":100,"pos":{"x":0.0,"y":0.0,"z":0.0},"rotateQ":{"x":0.0,"y":0.0,"z":0.0,"w":0.0},"rotateAtPos":{"x":0.0,"y":0.0,"z":1.0},"rotateAtRollDeg":0.0}}},"isWait":true,"fadeMode":100,"fadeLayer":0,"fadeTime":1.5,"fadeTimeSymbol":"","fadeColorStart":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"fadeColorEnd":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}
-  2::Sleep:{"timeSec":2.0}
-  3::GameFlowNext:{"nextFlow":1}
+  2::GameFlowNext:{"nextFlow":1}
 }
 
 -- <<★BranchEndBlob

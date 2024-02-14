@@ -1012,10 +1012,8 @@
       ★END
   ★Scenario
     {"id":"83939","scenarioLv":"","debugPkd1Scene":"","isContinuePos":false}
-    Entry:{"debugName":"遥か天空へ","debugNameTextId":"DEBUG_FLOW_MAINFLOW_83939_0","relScriptPath":"event/main/m10/m10_05_harukatenkuuhe.lua","debugPkd1Scene":""}
   ★Scenario
     {"id":"75289","scenarioLv":"","debugPkd1Scene":"","isContinuePos":false}
-    Entry:{"debugName":"天空の塔初突入","debugNameTextId":"DEBUG_FLOW_MAINFLOW_75289_0","relScriptPath":"event/main/m10/m10_06_tenkuunotoutry1st.lua","debugPkd1Scene":""}
   ★ProgressNo
     {"id":"3200","progressNo":"Main_10020","debugName":"天空の塔ループ の前"}
   ★Dungeon
@@ -1060,12 +1058,6 @@
       ★END
   ★Scenario
     {"id":"85617","scenarioLv":"","debugPkd1Scene":"","isContinuePos":false}
-    Entry:{"debugName":"天空の塔クリア","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_0","relScriptPath":"event/main/m10/m10_11_tenkuunotouclear.lua","debugPkd1Scene":""}
-    Entry:{"debugName":"さまよう魂","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_1","relScriptPath":"event/main/m10/m10_12_samayoutamashii.lua","debugPkd1Scene":""}
-    Entry:{"debugName":"世界は救われた","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_2","relScriptPath":"event/main/m10/m10_13_sekaihasukuwareta.lua","debugPkd1Scene":""}
-    Entry:{"debugName":"別れ","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_3","relScriptPath":"event/main/m10/m10_14_wakare.lua","debugPkd1Scene":""}
-    Entry:{"debugName":"魂が昇る","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_4","relScriptPath":"event/main/m10/m10_15_tamashiiganoboru.lua","debugPkd1Scene":""}
-    Entry:{"debugName":"エピローグ","debugNameTextId":"DEBUG_FLOW_MAINFLOW_85617_6","relScriptPath":"event/main/m10/m10_17_epilogue.lua","debugPkd1Scene":""}
   ★ProgressNo
     {"id":"49868","progressNo":"Main_10030","debugName":"スタッフロール後"}
   ★Ending
