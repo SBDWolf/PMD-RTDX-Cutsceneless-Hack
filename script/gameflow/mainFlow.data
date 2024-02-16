@@ -260,6 +260,7 @@
       ★END
   ★Scenario
     {"id":"37318","scenarioLv":"","debugPkd1Scene":"EVENT_M01E03A_L011","isContinuePos":false}
+    Entry:{"debugName":"あやしい森クリア","debugNameTextId":"DEBUG_FLOW_MAINFLOW_37318_0","relScriptPath":"event/main/m03/m03_12_ayashiimoriclear.lua","debugPkd1Scene":""}
   ★END
 ★BOX
   {"debugName":"main04","debugNameTextId":"DEBUG_FLOW_MAINFLOW_36132","id":"36132"}
@@ -609,6 +610,7 @@
       ★END
   ★Scenario
     {"id":"32655","scenarioLv":"","debugPkd1Scene":"","isContinuePos":false}
+    Entry:{"debugName":"炎の山クリア","debugNameTextId":"DEBUG_FLOW_MAINFLOW_32655_0","relScriptPath":"event/main/m07/m07_20_honoonoyamaclear.lua","debugPkd1Scene":""}
   ★Scenario
     {"id":"70963","scenarioLv":"","debugPkd1Scene":"","isContinuePos":false}
   ★END
